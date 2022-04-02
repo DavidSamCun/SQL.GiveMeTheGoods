@@ -7,19 +7,25 @@ Values
 
 Insert into Students
 Values
-(13,'Kitana Kang', '823 Cheese', 'Viare', '41515', 'Sint Marteen',23)
-(14,'Jade Earth', 'Outer World', 'MarsRange', '35733', 'Haiti',23)
-(15,'Chung Li', '', 'Fatality', '35733', 'Haiti',23)
-(16,'Kom Bat', '1204 Hyper', 'Fatality', '35733', 'Mortal',23)
+(13,'Kitana Kang', '823 Cheese', 'Viare', '41515', 'Sint Marteen',23),
+(14,'Jade Earth', 'Outer World', 'MarsRange', '35733', 'Haiti',23),
+(15,'Chung Li', '', 'Fatality', '35733', 'Haiti',23),
+(16,'Kom Bat', '1204 Hyper', 'Fatality', '35733', 'Mortal',23);
 
 Alter Table Students Modify id int First;
 
 Alter Table Students
 Add Column CreditHours INTEGER;
 
+Update Students Set CourseName = 'ColdFusion' where Country = 'USA';
+
+Create Table StudentTableBackup AS Select * From Students;
 
 Update Students Set CreditHours = CreditHours + 10 Where Country = 'USA';
 
 
 Alter Table Students Modify Column id INTEGER Auto_Increment;
 
+How to duplicate a table
+CREATE TABLE new_table AS SELECT * FROM original_table;
+Create Table StudentTableBackup AS Select * From Students;
