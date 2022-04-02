@@ -1,0 +1,17 @@
+Insert into Students
+Values
+('Sera Tonin', '631 Olney', 'Carty', '21414', 'China',
+('Ham Burger', '1204 Hyper', 'Canlay', '13161', 'Lofly'),
+('Joe Kangaroo', '992 Deveroux', 'SinCity', '75462', 'Bermuda Triangle'),
+('Camer Web', '1204 Hyper', 'Ashlly', '56854', 'Roll'),
+('Kom Bat', '1204 Hyper', 'Fatality', '35733', 'Mortal'),
+('Kang Lu', '1204 Hyper', 'Earlivee', '12351', 'Outer Realm')
+;
+
+Alter Table Students Modify id int First;
+
+Alter Table Students
+Add Column CreditHours INTEGER;
+
+Update Students Set CreditHours = CreditHours + 10 Where Country = 'USA';
+
