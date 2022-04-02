@@ -26,9 +26,8 @@ exercise 9 - Use the BETWEEN operator to select all the records from the Courses
 select * from Students Where CourseName Between 'ColdFusion' and 'Python';
 
 exercise 10 - When displaying the Students table, make an alias of the PostalCode column, the column should be called Zip instead
-Select PortalCode AS Zip from table Students;
+Select PostalCode AS Zip from table Students;
 
 exercise 11 - When displaying the Students table, refer to the table as Learners instead of Students.
+Select PostalCode AS zip from Students as Learners;
 
-
-Select 'PortalCode' AS 'Zip' from table Students as 'Learners';
